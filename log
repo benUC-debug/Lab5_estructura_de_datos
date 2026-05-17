@@ -17,3 +17,15 @@ Sun May 17 11:56:27 PM UTC 2026:
  1 file changed, 1 deletion(-)
  tests:  0|0
 ba8ec20
+Sun May 17 11:57:46 PM UTC 2026: 
+ graph.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+graph.c: In function ‘addNode’:
+graph.c:40:20: error: implicit declaration of function ‘lista_create’; did you mean ‘list_create’? [-Wimplicit-function-declaration]
+   40 |     List * lista = lista_create();
+      |                    ^~~~~~~~~~~~
+      |                    list_create
+graph.c:40:20: error: initialization of ‘List *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+b892117
