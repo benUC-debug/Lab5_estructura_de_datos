@@ -53,3 +53,8 @@ graph.c:59:22: error: initialization of ‘int *’ from incompatible pointer ty
    59 |     mapPair * pair = map_search(g->adjacencyMap, (void*)label);
       |                      ^~~~~~~~~~
 2f75e7a
+Mon May 18 12:02:23 AM UTC 2026: 
+ graph.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+fd9b05f
