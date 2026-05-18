@@ -39,3 +39,17 @@ Mon May 18 12:01:03 AM UTC 2026:
  1 file changed, 8 insertions(+)
  tests:  0|0
 10b2328
+Mon May 18 12:01:59 AM UTC 2026: 
+ graph.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+graph.c: In function ‘getEdges’:
+graph.c:59:5: error: unknown type name ‘mapPair’; did you mean ‘MapPair’?
+   59 |     mapPair * pair = map_search(g->adjacencyMap, (void*)label);
+      |     ^~~~~~~
+      |     MapPair
+graph.c:59:22: error: initialization of ‘int *’ from incompatible pointer type ‘MapPair *’ [-Wincompatible-pointer-types]
+   59 |     mapPair * pair = map_search(g->adjacencyMap, (void*)label);
+      |                      ^~~~~~~~~~
+2f75e7a
