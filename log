@@ -64,3 +64,19 @@ Mon May 18 12:03:07 AM UTC 2026:
  tests:  8|2
 ========================================
 bcb505d
+Mon May 18 12:05:33 AM UTC 2026: 
+ graph.c | 14 +++++++++++---
+ 1 file changed, 11 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+graph.c: In function ‘getWeight’:
+graph.c:72:32: error: expected ‘;’ before ‘:’ token
+   72 |             return edge->weight:
+      |                                ^
+      |                                ;
+graph.c:74:14: error: ‘list’ undeclared (first use in this function); did you mean ‘List’?
+   74 |         edge=list->next(edges);
+      |              ^~~~
+      |              List
+graph.c:74:14: note: each undeclared identifier is reported only once for each function it appears in
+a0167c1
